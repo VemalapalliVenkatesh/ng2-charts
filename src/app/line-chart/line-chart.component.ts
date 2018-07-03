@@ -11,6 +11,7 @@ export class LineChartComponent {
     { data: [2800, 2875, 4000, 1900, 8600, 1700, 5000], label: 'Vinay' },
     { data: [1800, 4800, 4852, 9000, 8000, 2700, 4000], label: 'Jaskaran' }
   ];
+  // line chart lables for data
   public lineChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   public lineChartOptions: any = {
     responsive: true
