@@ -1,0 +1,8 @@
+
+/* Style for card title */
+.mat-card-title {
+    padding: 5px !important;
+    font:bolder;
+    color: teal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
