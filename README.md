@@ -6,7 +6,7 @@ This project is created to use ng2-charts (Line chart) in Angular 6 application
 
 Download or clone the project and run below command to install required dependencies 
 
-'npm install'  
+`npm install`  
 
 ## Run
 
