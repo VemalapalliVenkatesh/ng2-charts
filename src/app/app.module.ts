@@ -1,20 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ChartsModule } from 'ng2-charts';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { LineChartComponent } from './line-chart/line-chart.component';
-import { MatCardModule } from '@angular/material';
+import { ChartComponent } from './chart/chart.component';
+import { MatCardModule, MatSelectModule,  } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LineChartComponent
+    ChartComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     ChartsModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

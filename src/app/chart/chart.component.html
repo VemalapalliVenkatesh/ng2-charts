@@ -1,0 +1,29 @@
+<div>
+    <div >
+      <div style="display: block;">
+      <canvas baseChart height="30vh" width="130vw"
+                  [datasets]="chartData"
+                  [labels]="chartLabels"
+                  [options]="chartOptions"
+                  [colors]="chartColors"
+                  [legend]="chartLegend"
+                  [chartType]="chartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>             
+      </div>
+      <div style="margin-top: 8vw">
+        <label style="color: teal">Select chart type from the list to visualize it</label>
+      <br>
+      <br>
+      <mat-form-field>
+        <mat-select placeholder="Chart Type" [(ngModel)]="selectedChartType">
+          <mat-option *ngFor="let chart of chartTypes" [value]="chart.value" (onSelectionChange)="changeChartType($event, chart)">
+            {{chart.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    </div>
+  
+  
+  
