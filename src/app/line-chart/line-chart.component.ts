@@ -25,6 +25,7 @@ export class LineChartComponent {
   public get lineChartType(): string {
     return this._lineChartType;
   }
+  // We can switch to any other chart type by manipulating the value of _lineChartType
   public set lineChartType(value: string) {
     this._lineChartType = value;
   }
